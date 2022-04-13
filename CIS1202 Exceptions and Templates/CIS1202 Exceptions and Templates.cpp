@@ -8,6 +8,7 @@ using namespace std;
 // Declaration for the "half" template function.
 template <typename T>
 T half(T);
+int half(int);
 
 int showMenu();
 char character(char, int);
@@ -83,7 +84,10 @@ data type by 2, and returns the	*
 result.							*
 ********************************/
 T half(T n) {
-	return num / 2.0;
+	return (n / 2.0);
+}
+int half(int n) {
+	return round((static_cast<int>(n) / 2.0));
 }
 
 /********************************
