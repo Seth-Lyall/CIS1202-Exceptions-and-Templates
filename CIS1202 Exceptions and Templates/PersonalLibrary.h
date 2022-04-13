@@ -6,6 +6,7 @@
 #include <string>
 #include <random>
 #include <array>
+#include <algorithm>
 using namespace std;
 
 void endProgram() {
@@ -111,7 +112,7 @@ float validateFloat(string prompt, float min, float max) {
 
 char validateChar(string prompt) {
 	char num;
-	cout << "\n" << prompt;
+	cout << prompt;
 	while (!(cin >> num) || cin.fail()) {
 		cout << "\nERROR: Invalid Data Entered, Please Try Again." << endl;
 		cin.clear();
